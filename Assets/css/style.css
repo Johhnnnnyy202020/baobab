@@ -7,7 +7,7 @@ body {
     font-family: "Lucida Console", Courier, monospace;
 }
 .main {
-    background-image: url("https://browser-b4110f11-951d-491f-9944-fa9d32caeb28.ws-eu03.gitpod.io/workspace/baobab/Assets/community/gettyimages-867802330-612x612.jpg");
+    background-image: url("https://browser-b4110f11-951d-491f-9944-fa9d32caeb28.ws-eu03.gitpod.io/workspace/baobab/Assets/Cake-images/homemade-breads-ingredients-white-background-bakery-background-frame_46208-51.jpg");
     background-position: cover;
     background-size: 100% 100%;
     height: 400px;
@@ -23,7 +23,8 @@ body {
 }
 .bmenu li a{
 	white-space: nowrap;
-	color: transparent;
+    color: transparent;
+    outline: none;
 	display: block;
 	text-transform: uppercase;
 	text-align: center;
@@ -41,7 +42,7 @@ body {
     transition: all 0.6s linear;
 }
 .bmenu:hover li a{
-	text-shadow: 0px 0px 15px black;
+    text-shadow: 0px 0px 15px black;
 }
 .bmenu li a:hover{
 	text-shadow: 0px 0px 1px rgb(196, 40, 162);
@@ -49,7 +50,9 @@ body {
 	-ms-transform: scale(1); 
 	-o-transform: scale(1); 
 	-webkit-transform: scale(1); 
-	transform: scale(1); 
+    transform: scale(1);
+    outline: none;
+    overflow: hidden;
 }
 .header{
 	font-weight: 600;
@@ -59,11 +62,17 @@ body {
 	padding: 15px 15px 15px 15%;
 	color: #df277d;
 	border-radius: 0 10px 0 10px;
-	background: #fff url("https://browser-b4110f11-951d-491f-9944-fa9d32caeb28.ws-eu03.gitpod.io/workspace/baobab/Assets/Cake-images/image3.png") no-repeat center right;
+}
+.three-col {
+    column-count: 3;
+    column-gap: 20px;
+    font-size: medium;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 20px;
 }
 .card img:hover {
     animation-name: zoom;
-    animation-duration: 2s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 @keyframes zoom {
@@ -75,11 +84,16 @@ body {
     }
 }
 
-#foooter {
-    background-image: url("https://browser-b4110f11-951d-491f-9944-fa9d32caeb28.ws-eu03.gitpod.io/workspace/baobab/Assets/Cake-images/6-69174_cakes-images-rainbow-cakes-hd-wallpaper-and.jpg");
+#footer {
+    background-image: url("https://browser-b4110f11-951d-491f-9944-fa9d32caeb28.ws-eu03.gitpod.io/workspace/baobab/Assets/community/gettyimages-867802330-612x612.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: cover;
     height: 200px;
+}
+form {
+    background-image: url("https://browser-b4110f11-951d-491f-9944-fa9d32caeb28.ws-eu03.gitpod.io/workspace/baobab/Assets/Cake-images/image3.png");
+    background-repeat: no-repeat;
+    background-position: cover;
 }
 
 .text-block {
@@ -94,29 +108,11 @@ body {
 }
 
 
-
-
 /* Community */
 
-.second {
-    background-image: url("https://browser-b4110f11-951d-491f-9944-fa9d32caeb28.ws-eu03.gitpod.io/workspace/baobab/Assets/community/gettyimages-867802330-612x612.jpg");
-    background-position: cover;
-    background-size: 100% 100%;
-    height: 400px;
-}
-.img-fluid {
-    animation-name: grow;
-    animation-duration: 3s;
-    animation-fill-mode: forwards;
-    height: 400px;
-}
-@keyframes grow {
-    from{
-        transform: scale(1);
-    }
-    to{
-        transform: scale(1.2);
-    }
+
+.fa-globe {
+    color: green;
 }
 .ch-grid {
 	margin: 20px 0 0 0;
@@ -156,25 +152,19 @@ body {
 	transition: all 0.4s ease-in-out;
 }
 .ch-img-1 { 
-    background-image: url("https://browser-b4110f11-951d-491f-9944-fa9d32caeb28.ws-eu03.gitpod.io/workspace/baobab/Assets/Cake-images/IMG_0092.JPG");
-    background-repeat: no-repeat;
-    background-position: auto;
+    background-color: black;
 }
 
 .ch-img-2 { 
-	background-image: url("https://browser-b4110f11-951d-491f-9944-fa9d32caeb28.ws-eu03.gitpod.io/workspace/baobab/Assets/Cake-images/IMG_0141.JPG");
-    background-repeat: no-repeat;
-    background-position: cover;
+    background-color: red;
 }
 
 .ch-img-3 { 
-	background-image: url("https://browser-b4110f11-951d-491f-9944-fa9d32caeb28.ws-eu03.gitpod.io/workspace/baobab/Assets/Cake-images/image1.jpeg");
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
+	background-color: green;
 }
 .ch-info {
 	position: absolute;
-	background: rgba(63,147,147, 0.8);
+	background: paleturquoise;
 	width: inherit;
 	height: inherit;
 	border-radius: 50%;
@@ -196,17 +186,6 @@ body {
 		0 0 1px #fff, 
 		0 1px 2px rgba(0,0,0,0.3);
 }
-.ch-info p {
-	color: #fff;
-	padding: 10px 5px;
-	font-style: italic;
-	margin: 0 30px;
-	font-size: 12px;
-	border-top: 1px solid rgba(255,255,255,0.5);
-	opacity: 0;
-	transition: all 1s ease-in-out 0.4s;
-}
-
 .ch-item:hover {
 	box-shadow: 
 		inset 0 0 0 1px rgba(255,255,255,0.1),
@@ -222,33 +201,29 @@ body {
 
 .rw-wrapper{
 	width: 100%;
-	position: relative;
+	position: inherit;
 	font-family: 'Bree Serif';
 	padding: 10px;
 }
 .rw-sentence{
-	margin: 0;
-	text-align: left;
-	text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+	text-shadow: 1px 1px 1px rgba(32, 9, 9, 0.8);
 }
 .rw-sentence span{
 	color: #444;
 	white-space: nowrap;
-	font-size: 120%;
-	font-weight: normal;
+    font-weight: normal;
+    font-size: 200%;
 }
 .rw-words{
-	display: inline;
-	text-indent: 10px;
+    text-indent: 10px;
 }
 .rw-words span{
-	position: absolute;
+    position: absolute;
 	opacity: 0;
 	overflow: hidden;
-	color: #6b969d;
-}
-.rw-words-1 span{
-	animation: rotateWordsFirst 9s linear infinite 0s;
+    color: #6b969d;
+    animation: rotateWordsFirst 9s linear infinite 0s;
+    
 }
 .rw-words span:nth-child(2) { 
 	animation-delay: 3s; 
@@ -264,4 +239,48 @@ body {
     19% { opacity: 1; height: 60px; }
 	25% { opacity: 0; height: 60px; }
     100% { opacity: 0; }
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+        typing 3.5s steps(30, end);
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+.line-1{
+    position: relative;
+    top: 50%;
+    margin: 0 auto;  
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }
