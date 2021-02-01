@@ -96,17 +96,6 @@ form {
     background-position: cover;
 }
 
-.text-block {
- display: none;
-  position: absolute;
-  top: 200px;
-  right: 20px;
-  background-color: black;
-  color: white;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
 
 /* Community */
 
@@ -250,7 +239,7 @@ form {
     margin: 0 auto; /* Gives that scrolling effect as the typing happens */
     letter-spacing: .15em; /* Adjust as needed */
     animation: 
-        typing 3.5s steps(30, end);
+        typing 3.5s steps(20, end);
 }
 
 /* The typing effect */
@@ -278,7 +267,7 @@ form {
 }
 @keyframes typewriter{
   from{width: 0;}
-  to{width: 24em;}
+  to{width: 20em;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
